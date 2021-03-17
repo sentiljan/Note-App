@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 2em;
+    background-color: lightcyan;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note{
+    width: 25%;
+}
+
+.notes{
+    margin-right: 2em;
+    margin-bottom: 2em;
+    height: fit-content;
+    background: #fff;
+    box-shadow: 3px 7px 25px -8px #00000016;
+}
+
+.add{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-right: 2em;
+    text-align: right;
+    justify-content: flex-end;
+    line-height: 1.6em;
+    font-size: 1em;
+    font-weight: bold;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+button svg{
+    width: 25px;
+}
+
+.notes .tools {
+    display: flex ;
+    padding:4px 15px ;
+    justify-content: space-between;
+    background-color: rgb(98 224 196);
+}
+
+.notes .tools p{
+    font-weight: bold;
+    color: #fff;
+    line-height: 1em;
+}
+
+.notes .tools .btn-end{
+    justify-content: flex-end;
+    display: flex ;
+}
+
+.notes .tools button{
+    cursor: pointer;
+    justify-content: end;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.notes .tools button svg{
+    width: 25px;
+}
+
+
+.notes  textarea{
+    padding: 1em;
+    border:none;
+    height: 362px;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.notes  textarea:focus{
+    outline: none;
+}
+
+
+.notes .main {
+    padding: 1em;
+    margin: 0;
+    background-color: #1ba9120f;
+    overflow: auto;
+    height: 362px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(47 146 146);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.notes .hidden{
+    display: none;
+}
+
+#noteTitle{
+    max-width: 80%;
+    max-height: 1em;
+    text-overflow: ellipsis !important;
+    background: transparent;
+    white-space: nowrap;
+    overflow: hidden;  
+}
+
+#noteTitle:focus{
+    outline: solid #fff 1px;
+    padding:2px 10px;
+}
